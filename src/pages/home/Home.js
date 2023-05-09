@@ -4,6 +4,10 @@ import {addDoc, collection, deleteDoc, doc, getDocs, updateDoc} from "@firebase/
 import {db} from "../../firebase-config";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
+import Widget from "../../components/widget/Widget";
+import Featured from "../../components/featured/Featured";
+import Chart from "../../components/chart/Chart";
+import Table from "../../components/table/Table";
 
 const Home = () => {
     const [newName, setNewName] = useState("")
@@ -43,6 +47,23 @@ const Home = () => {
             <Sidebar/>
             <div className="homeContainer">
                 <Navbar/>
+                <div className="widgets">
+                    <Widget type={"books"}/>
+                    <Widget type={"orders"}/>
+                    <Widget type={"earnings"}/>
+                    <Widget type={"balance"}/>
+                </div>
+                <div className="chartsContainer">
+                    <Featured/>
+                    <Chart/>
+                </div>
+                <div className="listContainer">
+                    <div className="listTitle">
+                        Withdrawals
+                    </div>
+                    <Table/>
+                </div>
+
                 <input placeholder={"Name.."} onChange={(event) => {
                     setNewName(event.target.value)
                 }}/>
