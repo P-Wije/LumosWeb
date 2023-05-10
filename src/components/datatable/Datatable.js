@@ -35,12 +35,12 @@ const rows = [
     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-const Datatable = () => {
+const Datatable = ({title, path}) => {
   return (
       <div className={"datatable"}>
           <div className="datatableTitle">
-              Add New User
-              <Link to={"/users/new"} style={{textDecoration: "none"}} className={"link"}>
+              {title}
+              <Link to={path} style={{textDecoration: "none"}} className={"link"}>
                   + Add New
               </Link>
           </div>
