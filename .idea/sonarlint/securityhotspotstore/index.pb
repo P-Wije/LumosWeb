@@ -11,8 +11,6 @@ S
 #src/components/sidebar/sidebar.scss,3\a\3af19be72a5ec5cab3440af1b0f1719ccfb2e2ee
 J
 src/pages/single/Single.js,e\1\e18c4496c55df609ad2ac33ecf8b61507997544a
-F
-src/firebase-config.js,c\7\c7d42a96b5c938e74612806af1067e2ff6a07d63
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 A
